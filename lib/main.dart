@@ -69,7 +69,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 bool correctAnswer =
-                    quizBrain.questionBank[questionNumber].questionAnswer;
+                    quizBrain.getQuestionAnswer(questionNumber);
                 if (correctAnswer == true) {
                   scoreKeeper.add(Icon(
                     Icons.check,
@@ -102,7 +102,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 bool correctAnswer =
-                    quizBrain.questionBank[questionNumber].questionAnswer;
+                    quizBrain.getQuestionAnswer(questionNumber);
                 if (correctAnswer == false) {
                   scoreKeeper.add(Icon(
                     Icons.check,
