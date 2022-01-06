@@ -69,7 +69,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  questionNumber = questionNumber + 1;
+                  questionNumber++;
                 });
               },
             ),
@@ -89,7 +89,7 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 setState(() {
-                  questionNumber = questionNumber + 1;
+                  questionNumber++;
                 });
               },
             ),
